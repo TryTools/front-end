@@ -38,10 +38,9 @@ A Next.js starter template with TypeScript, Tailwind CSS, and professional UI co
 
 - **Responsive Design** - Mobile-first approach, works on all devices
 - **Dark Mode Ready** - Easy theme switching implementation
-- **Framer Motion** - Smooth animations and transitions
 - **Radix UI** - Accessible, unstyled component primitives
-- **Glass Morphism** - Modern glass effect styling
 - **Professional Components** - Pre-built, customizable UI components
+- **Clean Design** - Modern, minimal styling that looks great
 
 ### Developer Experience
 
@@ -210,7 +209,6 @@ Responsive navigation bar with mobile menu:
 ### UI Components
 
 - **Radix UI** - Unstyled, accessible component primitives
-- **Framer Motion 12** - Animation library
 - **Lucide React** - Beautiful icon library
 - **class-variance-authority** - Component variant management
 - **tailwind-merge** - Utility for merging Tailwind classes
@@ -383,7 +381,6 @@ Built with modern web technologies:
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Radix UI Documentation](https://www.radix-ui.com/docs)
-- [Framer Motion Documentation](https://www.framer.com/motion)
 
 ---
 

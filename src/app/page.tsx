@@ -1,11 +1,8 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/navigation";
 import Link from "next/link";
 import { ArrowRight, Zap, Code2, Rocket, Shield, Globe, Sparkles } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function Home() {
   const features = [
@@ -41,27 +38,6 @@ export default function Home() {
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -69,39 +45,22 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="container-custom">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
-            className="flex flex-col items-center text-center max-w-4xl mx-auto"
-          >
-            <motion.div
-              variants={itemVariants}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
-            >
+          <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
               <Sparkles className="w-4 h-4" />
               <span>Professional Next.js Starter Template</span>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              variants={itemVariants}
-              className="text-hero mb-6 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent"
-            >
+            <h1 className="text-hero mb-6">
               Build amazing web apps in minutes
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              variants={itemVariants}
-              className="text-xl text-muted-foreground mb-8 max-w-2xl"
-            >
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
               A modern, production-ready Next.js template with TypeScript, Tailwind CSS, 
               and all the tools you need to build exceptional web applications.
-            </motion.p>
+            </p>
 
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-wrap gap-4 justify-center"
-            >
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" asChild>
                 <Link href="/get-started">
                   Get Started
@@ -113,12 +72,9 @@ export default function Home() {
                   View on GitHub
                 </Link>
               </Button>
-            </motion.div>
+            </div>
 
-            <motion.div
-              variants={itemVariants}
-              className="mt-12 text-sm text-muted-foreground flex flex-wrap gap-6 justify-center"
-            >
+            <div className="mt-12 text-sm text-muted-foreground flex flex-wrap gap-6 justify-center">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-full bg-green-500" />
                 <span>TypeScript</span>
@@ -135,78 +91,58 @@ export default function Home() {
                 <div className="w-2 h-2 rounded-full bg-orange-500" />
                 <span>React 19</span>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Features Section */}
       <section id="features" className="py-20 px-4 bg-muted/30">
         <div className="container-custom">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={containerVariants}
-            className="max-w-3xl mx-auto text-center mb-16"
-          >
-            <motion.h2 variants={itemVariants} className="text-display mb-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-display mb-4">
               Everything you need to build
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-lg text-muted-foreground">
+            </h2>
+            <p className="text-lg text-muted-foreground">
               Start with a solid foundation. All the essentials are included so you can 
               focus on building your product.
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={containerVariants}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <motion.div key={index} variants={itemVariants}>
-                  <Card className="h-full">
-                    <CardHeader>
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                        <Icon className="w-6 h-6 text-primary" />
-                      </div>
-                      <CardTitle>{feature.title}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-base">
-                        {feature.description}
-                      </CardDescription>
-                    </CardContent>
-                  </Card>
-                </motion.div>
+                <Card key={index} className="h-full hover:border-primary/50 transition-colors">
+                  <CardHeader>
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <CardTitle>{feature.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">
+                      {feature.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
               );
             })}
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="container-custom">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={containerVariants}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <motion.h2 variants={itemVariants} className="text-display mb-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-display mb-4">
               Ready to get started?
-            </motion.h2>
-            <motion.p variants={itemVariants} className="text-lg text-muted-foreground mb-8">
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8">
               Clone this template and start building your next project today.
-            </motion.p>
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center">
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button size="lg" asChild>
                 <Link href="/get-started">
                   Get Started
@@ -218,8 +154,8 @@ export default function Home() {
                   View Documentation
                 </Link>
               </Button>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
