@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TryTools Front-End Template
 
-## Getting Started
+A modern, production-ready **Next.js starter template** with TypeScript, Tailwind CSS, and professional UI components. Built for developers who want to ship fast without compromising on quality.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![React](https://img.shields.io/badge/React-19-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8)
+
+## ✨ Features
+
+- 🚀 **Next.js 15** with App Router
+- ⚡ **React 19** with latest features
+- 🎨 **Tailwind CSS v4** for styling
+- 📘 **TypeScript** for type safety
+- 🎭 **Framer Motion** for animations
+- 🧩 **Radix UI** components
+- 🎯 **Clean Architecture** and folder structure
+- 📱 **Fully Responsive** design
+- 🌗 **Dark Mode** ready
+- ♿ **Accessible** components
+- 🔧 **ESLint** configured
+- 💅 **Professional UI** components
+
+## 🚀 Quick Start
+
+### Clone this repository
+
+```bash
+git clone https://github.com/trytools/front-end.git my-project
+cd my-project
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                # Next.js app directory
+│   ├── layout.tsx     # Root layout
+│   ├── page.tsx       # Home page
+│   └── globals.css    # Global styles
+├── components/        # React components
+│   ├── ui/           # UI components (Button, Card, etc.)
+│   └── navigation.tsx # Navigation component
+└── lib/              # Utility functions
+    └── utils.ts      # Helper functions
+```
 
-## Learn More
+## 🎨 UI Components
 
-To learn more about Next.js, take a look at the following resources:
+This template includes professionally designed, reusable components:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Button** - Multiple variants (default, outline, ghost, etc.)
+- **Card** - Feature cards with hover effects
+- **Navigation** - Responsive navbar with mobile menu
+- **Glass effects** - Modern glassmorphism styling
+- **Animations** - Smooth transitions with Framer Motion
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Built With
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [Radix UI](https://www.radix-ui.com/) - Accessible components
+- [Lucide Icons](https://lucide.dev/) - Beautiful icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Update Branding
+
+1. Change the logo and name in `src/components/navigation.tsx`
+2. Update metadata in `src/app/layout.tsx`
+3. Modify colors in `src/app/globals.css`
+
+### Add Pages
+
+Create new pages in the `src/app` directory:
+
+```bash
+src/app/about/page.tsx
+src/app/blog/page.tsx
+```
+
+### Styling
+
+The template uses Tailwind CSS with a custom design system. Modify variables in `globals.css`:
+
+```css
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.147 0.004 49.25);
+  /* Add your custom colors */
+}
+```
+
+## 🚢 Deployment
+
+### Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/trytools/front-end)
+
+### Other Platforms
+
+This template works with any platform that supports Next.js:
+
+- **Netlify**
+- **AWS Amplify**
+- **Cloudflare Pages**
+- **Railway**
+
+## 📚 Learn More
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+- [Framer Motion Documentation](https://www.framer.com/motion/)
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## 📄 License
+
+MIT License - feel free to use this template for your projects!
+
+## 💬 Support
+
+- 📧 Email: support@trytools.dev
+- 🐦 Twitter: [@trytools](https://twitter.com/trytools)
+- 🌐 Website: [trytools.dev](https://trytools.dev)
+
+---
+
+**Built with ❤️ by TryTools**
+
+Start building amazing web applications today! 🚀
