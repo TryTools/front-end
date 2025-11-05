@@ -22,9 +22,9 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-xl">
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-bold">
-              T
+              S
             </div>
-            <span>TryTools</span>
+            <span>Spawnlabs</span>
           </Link>
 
           {/* Desktop Navigation */}

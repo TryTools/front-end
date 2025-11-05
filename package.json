@@ -1,8 +1,8 @@
 {
-  "name": "trytools-frontend-template",
+  "name": "spawnlabs-frontend-template",
   "version": "1.0.0",
   "private": true,
-  "description": "Professional Next.js starter template with TypeScript, Tailwind CSS, and modern UI components",
+  "description": "Professional Next.js starter template by Spawnlabs with TypeScript, Tailwind CSS, and modern UI components",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

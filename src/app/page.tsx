@@ -109,7 +109,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="https://github.com/trytools/front-end" target="_blank">
+                <Link href="https://github.com/TryTools/front-end" target="_blank">
                   View on GitHub
                 </Link>
               </Button>
@@ -214,7 +214,7 @@ export default function Home() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="https://github.com/trytools/front-end" target="_blank">
+                <Link href="https://github.com/TryTools/front-end" target="_blank">
                   View Documentation
                 </Link>
               </Button>
@@ -229,9 +229,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2 font-bold text-xl">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center text-primary-foreground font-bold">
-                T
+                S
               </div>
-              <span>TryTools</span>
+              <span>Spawnlabs</span>
             </div>
             <div className="flex gap-6 text-sm text-muted-foreground">
               <Link href="#" className="hover:text-foreground transition-colors">
@@ -240,13 +240,13 @@ export default function Home() {
               <Link href="#" className="hover:text-foreground transition-colors">
                 Terms
               </Link>
-              <Link href="https://github.com/trytools/front-end" target="_blank" className="hover:text-foreground transition-colors">
+              <Link href="https://github.com/TryTools/front-end" target="_blank" className="hover:text-foreground transition-colors">
                 GitHub
               </Link>
             </div>
           </div>
           <div className="mt-8 text-center text-sm text-muted-foreground">
-            © 2025 TryTools. Built with Next.js and Tailwind CSS.
+            © 2025 Spawnlabs. Built with Next.js and Tailwind CSS.
           </div>
         </div>
       </footer>

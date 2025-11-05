@@ -1,4 +1,4 @@
-# TryTools Front-End Template
+# Spawnlabs Front-End Template
 
 A modern, production-ready **Next.js starter template** with TypeScript, Tailwind CSS, and professional UI components. Built for developers who want to ship fast without compromising on quality.
 
@@ -27,7 +27,7 @@ A modern, production-ready **Next.js starter template** with TypeScript, Tailwin
 ### Clone this repository
 
 ```bash
-git clone https://github.com/trytools/front-end.git my-project
+git clone https://github.com/TryTools/front-end.git my-project
 cd my-project
 ```
 
@@ -113,7 +113,7 @@ The template uses Tailwind CSS with a custom design system. Modify variables in 
 
 ### Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/trytools/front-end)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/TryTools/front-end)
 
 ### Other Platforms
 
@@ -141,12 +141,12 @@ MIT License - feel free to use this template for your projects!
 
 ## 💬 Support
 
-- 📧 Email: support@trytools.dev
-- 🐦 Twitter: [@trytools](https://twitter.com/trytools)
-- 🌐 Website: [trytools.dev](https://trytools.dev)
+- 📧 Email: support@spawnlabs.ai
+- 🐦 Twitter: [@Spawnlabs](https://twitter.com/Spawnlabs)
+- 🌐 Website: [spawnlabs.ai](https://spawnlabs.ai)
 
 ---
 
-**Built with ❤️ by TryTools**
+**Built with ❤️ by Spawnlabs**
 
 Start building amazing web applications today! 🚀

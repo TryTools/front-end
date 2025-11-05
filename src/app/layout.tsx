@@ -2,24 +2,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TryTools - Professional Next.js Starter Template",
+  title: "Spawnlabs - Professional Next.js Starter Template",
   description: "A modern, production-ready Next.js template with TypeScript, Tailwind CSS, and all the tools you need to build exceptional web applications.",
-  keywords: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Starter Template", "Web Development"],
-  authors: [{ name: "TryTools" }],
-  creator: "TryTools",
+  keywords: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Starter Template", "Web Development", "Spawnlabs"],
+  authors: [{ name: "Spawnlabs" }],
+  creator: "Spawnlabs",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://github.com/trytools/front-end",
-    title: "TryTools - Professional Next.js Starter Template",
+    url: "https://github.com/TryTools/front-end",
+    title: "Spawnlabs - Professional Next.js Starter Template",
     description: "A modern, production-ready Next.js template with TypeScript, Tailwind CSS, and modern UI components.",
-    siteName: "TryTools",
+    siteName: "Spawnlabs",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TryTools - Professional Next.js Starter Template",
+    title: "Spawnlabs - Professional Next.js Starter Template",
     description: "A modern, production-ready Next.js template with TypeScript, Tailwind CSS, and modern UI components.",
-    creator: "@trytools",
+    creator: "@Spawnlabs",
   },
   robots: {
     index: true,
